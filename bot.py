@@ -10,7 +10,7 @@ async def on_startup(_):
 
 profile_cd = CallbackData('profile')
 
-TOKEN = "5701678532:AAGACsAqa1ff1puppACKTzydoCs8RcrwcNI"
+TOKEN = "TOKEN"
 storage = MemoryStorage()
 bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
