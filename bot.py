@@ -121,7 +121,7 @@ async def load_age(message: types.Message, state: FSMContext) -> None:
     async with state.proxy() as data:
         data['age'] = message.text
 
-    await message.answer('Теперь укажи своё хобби', repQly_markup=kb1(hob))
+    await message.answer('Теперь укажи своё хобби', reply_markup=kb1(hob))
     await QuestionnaireStatesGroup.next()
 
 my_list = []
